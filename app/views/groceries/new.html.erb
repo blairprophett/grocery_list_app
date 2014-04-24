@@ -1,0 +1,13 @@
+<h1> Add an Item to the Grocery List </h1>
+
+<%= form_for @grocery do |f| %>
+
+		<%= label_tag(:item, "Item:") %>
+		<%= f.text_field :item %></br>
+
+		<%= label_tag(:details, "Details:") %>
+		<%= f.text_area :details %></br>
+
+		<%= f.submit "Add" %>
+
+	<% end %>
