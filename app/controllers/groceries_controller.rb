@@ -24,7 +24,7 @@ class GroceriesController < ApplicationController
   def update
   	@grocery = Grocery.find(params[:id])
   	@grocery.update grocery_params
-  	redirect_to groceries_path(@grocery)
+  	redirect_to grocery_path(@grocery)
   end
 
   def destroy

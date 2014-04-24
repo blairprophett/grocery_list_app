@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>GroceryApp</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
+	<div id="container">
+		<div id="header">
+			<head>
+				<p>~Virtual Grocery List~</p>
+					
+  					<title>GroceryApp</title>
+  					<link rel="stylesheet" type="text/css" href="/stylesheets/application.css" />
+  					<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  					<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  					<%= csrf_meta_tags %>
+			</head>
+		</div>
+	<div id="body">
 <body>
-
-<%= yield %>
-
+	<%= yield %>
 </body>
+	</div>
+	<div id="footer">
+		<p>Created by: Blair Cuny, WDI April 2014</p>
+	</div>
+	</div>
 </html>

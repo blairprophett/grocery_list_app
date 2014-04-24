@@ -1,10 +1,13 @@
-<h1>Blair's Grocery List</h1>
+<h2>Grocery List</h2>
 
-<%= link_to "Add Grocery Item", new_grocery_path %><br></br>
-
+<%= link_to "add item to the list", new_grocery_path %><br></br>
 <% @groceries.each do |grocery| %>
-	<li><%=link_to "Edit", edit_grocery_path(grocery[:id])%>
-	<%=link_to "Delete", grocery, method: :delete, data: { confirm: "Your sure?" } %>
+	<li>
 	<%= link_to grocery.item, grocery_path(grocery) %>
+	<%=link_to "Edit", edit_grocery_path(grocery[:id])%> 
+	<%=link_to "Delete", grocery, method: :delete, data: { confirm: "Your sure?" } %>
 	</li>
 <% end %>
+
+
+

@@ -1,4 +1,4 @@
-<h1> Add an Item to the Grocery List </h1>
+<h1> Add an Item</br> to the Grocery List </h1>
 
 <%= form_for @grocery do |f| %>
 
@@ -11,3 +11,6 @@
 		<%= f.submit "Add" %>
 
 	<% end %>
+	</br>
+
+	<%= link_to "Back to Grocery List", groceries_path %>
